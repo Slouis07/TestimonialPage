@@ -1,33 +1,14 @@
-<!-- Please update value in the {} -->
-
-<h1 align="center">Reviewers | devChallenges</h1>
-
-<div align="center">
-   Solution for a challenge <a href="https://devchallenges.io/challenge/testimonial-page" target="_blank">Testimonial Page</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
-</div>
-
-<div align="center">
-  <h3>
-    <a href="https://sevtestimonialpage.netlify.app/"> Demo </a>
-    <span> | </span>
-    <a href="https://github.com/Slouis07"> Solution </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenge/testimonial-page"> Challenge </a>
-  </h3>
-</div>
-
 ## Table of Contents
 - [Overview](#overview)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
 - [Built with](#built-with)
 - [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
-![screenshot](<img width="1440" alt="mytestimonialdesktopview" src="https://github.com/user-attachments/assets/770a4458-ef8d-4deb-bedf-97357ffae3f5" />
-)
+![screenshot](https://github.com/user-attachments/assets/3cd5fde5-2723-4cdc-8ddd-2cca67e13780)
 
 Reviewers is a testimonial page where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent. The page includes headings, body text, checklists, and testimonial cards styled with CSS. The design is responsive and adapts to different screen sizes.
 
