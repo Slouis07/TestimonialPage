@@ -10,7 +10,7 @@
 ## Overview
 ![screenshot](https://github.com/user-attachments/assets/3cd5fde5-2723-4cdc-8ddd-2cca67e13780)
 
-Reviewers is a testimonial page where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent. The page includes headings, body text, checklists, and testimonial cards styled with CSS. The design is responsive and adapts to different screen sizes.
+Reviewers is a carefully structured testimonial page designed to provide users with essential guidelines, checklists, and resources for reviewing papers and manuscripts. Built with clean, semantic HTML and thoughtfully styled with CSS, it delivers a visually engaging and well-organized layout that enhances readability and usability. The page includes clearly defined sections, structured text elements, and elegantly styled testimonial cards to ensure clarity and coherence. Designed with responsive principles, it seamlessly adapts to various screen sizes, maintaining accessibility and a polished aesthetic across devices.
 
 ### What I learned
 Working on this project strengthened my **HTML & CSS structuring** skills, particularly:
@@ -32,7 +32,7 @@ Working on this project strengthened my **HTML & CSS structuring** skills, parti
 
 ## Features
 This project was built to complete the **DevChallenges** testimonial page challenge. The core features include:
-✅ A **structured review checklist** for users  
+✅ **structured review checklist** for users  
 ✅ **Two testimonial cards** styled & positioned according to design specs  
 ✅ **Fully responsive** layout for mobile, tablet, and desktop  
 ✅ **Live deployed site** via Netlify  
