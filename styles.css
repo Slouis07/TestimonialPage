@@ -97,7 +97,7 @@ h1 {
 .right-side-container {
   display: flex;
   flex-direction: column; /*stacks samantha and rachel card vertically*/
-  align-items: flex-end; /* Aligns the testimonial cards to the right **inside their own section**. Grid already did the split-screen effect—this just keeps the cards pushed to the right */
+  align-items: flex-end; /* Aligns the testimonial cards to the right inside their own section. Grid already did the split-screen effect—this just keeps the cards pushed to the right */
 }
 
 /* in the right side container */
@@ -167,15 +167,15 @@ footer {
 }
 
 footer a {
-  text-decoration: underline; /* Make links visually distinct */
+  text-decoration: underline; 
   color: #4d5562;
 }
 
 /* --- Tablet: Stack columns, center cards, keep diagonal look --- */
 @media (max-width: 1024px) {
   .grid-layout {
-    display: flex; /* stack columns vertically */
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; /* stack columns vertically */
     align-items: stretch;
   }
   .left-side-container,
@@ -237,16 +237,15 @@ footer a {
     text-align: left;
   }
 
-  /* Let the parent container's padding handle the spacing, so borders are never cut off */
   .testimonial-card {
     width: 100%;
     max-width: 100%;
     min-width: 0;
     margin: 18px 0 0 0; /* more space between cards */
     box-sizing: border-box;
-    border-radius: 16px; /* more rounded corners */
-    padding: 22px 18px; /* more padding inside */
-    background: #fff; /* white background for card look */
+    border-radius: 16px; 
+    padding: 22px 18px;
+    background: #fff;
     box-shadow: 0 4px 24px 0 rgba(17, 23, 41, 0.08); /* subtle shadow */
   }
 
@@ -255,6 +254,6 @@ footer a {
     margin-left: 0;
     margin-right: 0;
     max-width: none;
-    padding: 5px; /* let .testimonial-card handle padding */
+    padding: 5px;
   }
 }
