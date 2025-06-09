@@ -1,23 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple testimonial webpage."/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple testimonial webpage." />
     <title>Testimonial Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-</head>
-<body>
+  <body>
+    <main>
+      <div class="grid-layout">
+        <div class="left-side-container">
+          <div class="left-content-column">
+            <section>
+              <header>
+                <div class="star-container">
+                  <p id="star-emoji">⭐️</p>
+                </div>
+                <h1>Reviewers</h1>
+              </header>
+              <p id="reviewers-paragraph">
+                Reviewers is where people can access guidelines, checklists, and
+                other tools to assist them in reviewing papers or manuscripts.
+                It provides a structured approach to ensure that the review
+                process is thorough, efficient, and consistent.
+              </p>
+            </section>
+
+            <div id="checklist-container">
+              <section id="checklist">
+                <ul>
+                  <li>Checklist to Review an Academic Paper</li>
+                  <li>Peer Review Checklist</li>
+                  <li>
+                    Checklist for Editors, Reviewers, and Authors of SPIE
+                    Journals
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side-container">
+          <section id="samantha-card" class="testimonial-card">
+            <div class="samantha-card-image">
+              <div class="samantha-rating-images">
+                <img src="assets/google-png.png" alt="Google logo" />
+                <div class="star-row">
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill_gray.svg"
+                    alt="unfilled star icon"
+                    class="star-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <h2>Samantha Lee</h2>
+            <p>The checklist ensures that the review process is thorough</p>
+          </section>
+
+          <section id="rachel-card" class="testimonial-card">
+            <div class="rachel-card-image">
+              <div class="rachel-rating-images">
+                <img src="assets/meta-png.png" alt="Meta logo" />
+                <div class="star-row">
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                  <img
+                    src="assets/Star_fill.svg"
+                    alt="Star filled icon"
+                    class="star-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <h2>Rachel Patel</h2>
+            <p>I highly recommend the Writecream Business Description</p>
+          </section>
+        </div>
+      </div>
+    </main>
     <footer>
-      <p>Coded by <a href="#"><strong>Severine Louis</strong></a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.</p>
+      <p>
+        Coded by
+        <a href="https://github.com/Slouis07/TestimonialPage"
+          ><strong>Severine Louis</strong></a
+        >
+        | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

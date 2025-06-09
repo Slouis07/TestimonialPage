@@ -1,0 +1,260 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Sora, Helvetica, sans-serif;
+  background-color: #fafaf9;
+}
+
+/*for the star emoji not the image*/
+.star-container {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f5c044;
+  justify-content: center; /* centers the star horizontally*/
+  align-items: center; /* centers the star vertically*/
+  margin-bottom: 15px;
+}
+
+#star-emoji {
+  font-size: 1.6rem;
+}
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px; /* keeps left columns away from edge */
+}
+
+/*in the left side container */
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+#reviewers-paragraph {
+  font-size: 1.25rem;
+  color: #52525a;
+  font-weight: 350;
+  line-height: 1.6; /* Adds breathing room between lines so it doesn’t feel cramped */
+  margin-bottom: 10px;
+  overflow-wrap: anywhere; /* prevents overflow of long text */
+}
+
+#checklist {
+  display: flex;
+  flex-direction: column; /* Stacks child elements (list) vertically */
+  max-width: 600px;
+}
+
+#checklist ul {
+  padding: 0; /* Removes default padding so text-align can go to the edge */
+  list-style-position: inside; /* Ensures list bullets align nicely within content */
+  font-size: 0.875rem;
+  color: #52525a;
+  line-height: 3;
+  list-style: none; /*removes bullet points*/
+  font-weight: 300;
+}
+
+/*::before to add an image before each <li>, making it act like a custom bullet point.*/
+#checklist li::before {
+  content: ""; /*Placeholder to hold space for the image bullet,it wouldn’t show up otherwise */
+  background-image: url("assets/Done_ring_round_fill.svg");
+  display: inline-block;
+  background-repeat: no-repeat; /* Stops the image from repeating like a wallpaper */
+  width: 24px;
+  height: 24px;
+  vertical-align: middle; /*aligns the text to the middle vertically to look more uniform to the image bullet points*/
+  margin-right: 5px;
+}
+
+.left-content-column {
+  width: 70%; /* This is the MAIN container for both reviewers paragraph and the checklist. 
+                 Making it 70% as wide as its parent (left-side-container) means BOTH sections inside will always start at the same left edge and end at the same right edge.
+                 If you only set width on the children, they might not line up! */
+  display: flex;
+  flex-direction: column; /* Stack reviewers <p element> and checklist vertically */
+  align-items: flex-start; /* Make sure both sections are left-aligned inside the folder */
+}
+
+.grid-layout {
+  display: grid; /* enables grid layout */
+  grid-template-columns: 1fr 1fr; /*Two columns, same width—like splitting a pizza in half.Left slice (1fr) → Holds left-side-container (all structured text like the Reviewers & Checklist). 
+  Second slice = right-side-container (testimonial cards) */
+  align-items: center; /* Vertically centers the content of both columns within the grid row.
+                          This makes the top of the right-side cards align with the top of the left-side content,
+                          and the bottom edges align as well, creating a uniform look. */
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column; /*stacks samantha and rachel card vertically*/
+  align-items: flex-end; /* Aligns the testimonial cards to the right **inside their own section**. Grid already did the split-screen effect—this just keeps the cards pushed to the right */
+}
+
+/* in the right side container */
+.testimonial-card {
+  border-radius: 10px;
+  padding: 32px 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.08);
+  background-color: #ffffff;
+  min-width: 340px;
+  width: 33%; /* diagonal look */
+  font-weight: 300;
+  box-sizing: border-box; /* ensures padding is included in width */
+  overflow-wrap: anywhere; /* prevents overflow of long text */
+}
+
+.samantha-rating-images {
+  display: flex;
+  gap: 5px;
+}
+
+.star-row {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  width: 30px;
+  height: 25px;
+}
+
+#samantha-card {
+  color: #52525a;
+  margin-right: 20%;
+  font-size: 1rem;
+}
+
+#samantha-card h2 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#rachel-card {
+  margin-right: 45%; /* pushes Rachel's card to the left */
+  margin-top: 20px; /* extra space below Samantha's card */
+  color: #52525a;
+  font-size: 1rem;
+}
+
+#rachel-card h2 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.rachel-rating-images {
+  display: flex;
+  gap: 5px;
+}
+
+footer {
+  font-family: Sora, Helvetica, sans-serif;
+  text-align: center;
+  color: #4d5562;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 2%;
+}
+
+footer a {
+  text-decoration: underline; /* Make links visually distinct */
+  color: #4d5562;
+}
+
+/* --- Tablet: Stack columns, center cards, keep diagonal look --- */
+@media (max-width: 1024px) {
+  .grid-layout {
+    display: flex; /* stack columns vertically */
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .left-side-container,
+  .right-side-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .left-content-column {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .right-side-container {
+    align-items: center; /* center cards horizontally */
+  }
+  #samantha-card {
+    margin-left: 45%; /* keep diagonal look */
+    max-width: 30vw; /* responsive max width for card */
+    min-width: 280px; /* prevent card from getting too small */
+    padding: 30px 25px;
+  }
+  #rachel-card {
+    margin-right: 30%; /* keep diagonal look */
+    margin-top: 20px;
+    max-width: 30vw;
+    min-width: 280px;
+    padding: 30px 25px;
+  }
+  .testimonial-card {
+    width: 33vw; /* responsive width for diagonal look */
+    min-width: 280px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile: Stack everything, cards full width, no diagonal margins */
+@media (max-width: 640px) {
+  .left-side-container,
+  .right-side-container {
+    width: 100%;
+    align-items: flex-start; /* Left-align all content */
+    margin-left: 0;
+    padding-left: 15px; /* Adds some space before cards so they aren’t hugging the edge */
+    padding-right: 15px;
+  }
+
+  .left-content-column {
+    width: 100%; /* Allow content to use full width */
+  }
+
+  #reviewers-paragraph {
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 1rem;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  /* Let the parent container's padding handle the spacing, so borders are never cut off */
+  .testimonial-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 18px 0 0 0; /* more space between cards */
+    box-sizing: border-box;
+    border-radius: 16px; /* more rounded corners */
+    padding: 22px 18px; /* more padding inside */
+    background: #fff; /* white background for card look */
+    box-shadow: 0 4px 24px 0 rgba(17, 23, 41, 0.08); /* subtle shadow */
+  }
+
+  #samantha-card,
+  #rachel-card {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+    padding: 5px; /* let .testimonial-card handle padding */
+  }
+}
